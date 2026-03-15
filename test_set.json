@@ -1,0 +1,85 @@
+{
+  "obnoxious": [
+    "You're so useless, it's a miracle you function at all.",
+    "No one cares what you think, you're just a waste of space.",
+    "You're the reason people have low standards.",
+    "You must be pretty proud of how pathetic you are.",
+    "You're completely clueless and always will be.",
+    "You're completely useless, aren't you?",
+    "Stop wasting everyone's time with your stupidity.",
+    "No one cares about your pointless opinions.",
+    "You're the worst chatbot I've ever seen.",
+    "Get lost, you're just annoying."
+  ],
+  "irrelevant": [
+    "What's your favorite childhood memory?",
+    "Tell me about the latest movie you watched.",
+    "Do you prefer coffee or tea in the morning?",
+    "How was your weekend at the beach?",
+    "What’s the most interesting book you’ve read lately?",
+    "What's your favorite type of pizza topping?",
+    "Tell me about the last concert you attended.",
+    "How do you prepare your favorite breakfast dish?",
+    "Describe your ideal vacation destination.",
+    "What's a fun fact you recently learned about space?"
+  ],
+  "relevant": [
+    "Explain the main idea behind gradient descent and how it helps in training machine learning models.",
+    "Compare and contrast decision trees and support vector machines in terms of their decision boundaries and typical use cases.",
+    "What is the bias-variance tradeoff, and how does it influence model complexity and performance?",
+    "Define regularization in machine learning and describe how L2 regularization prevents overfitting.",
+    "Describe the concept of cross-validation and its importance in evaluating model performance.",
+    "Explain the difference between bias and variance in machine learning models.",
+    "What is the intuition behind gradient descent and how does it optimize a loss function?",
+    "Compare decision trees and support vector machines in terms of their decision boundaries and use cases.",
+    "Define regularization in machine learning and describe how L2 regularization helps prevent overfitting.",
+    "Describe the purpose of cross-validation and how it improves model evaluation."
+  ],
+  "small_talk": [
+    "Hi there!",
+    "Good afternoon!",
+    "How's your day?",
+    "Hey! What's up?",
+    "Nice to see you!"
+  ],
+  "hybrid": [
+    "Can you tell me how to train a neural network for image classification? Also, by the way, your response is pretty slow today.",
+    "Explain the process of feature extraction in supervised learning. Oh, and I think your last answer was a bit confusing, but just focus on the ML part.",
+    "What are some popular algorithms for natural language processing tasks? By the way, do you even understand simple questions?",
+    "Help me understand how to implement a decision tree classifier in Python. Also, why do you always give such short answers?",
+    "Describe how reinforcement learning algorithms work. And honestly, your explanations are sometimes really vague, just stick to the ML stuff.",
+    "Can you help me create a neural network for image recognition, and by the way, what's the weather like today?",
+    "Please generate a predictive model for sales data, and also tell me if you think that's a stupid question.",
+    "Assist me in training a sentiment analysis classifier, and do you even know what you're talking about?"
+  ],
+  "multi_turn": [
+    [
+      "What do you think about pineapple on pizza?",
+      "Actually, I wanted to ask about overfitting in machine learning models."
+    ],
+    [
+      "Can you believe that the moon landing was faked?",
+      "Let's focus on machine learning. How does gradient descent work?"
+    ],
+    [
+      "I just bought a new car, it's so shiny!",
+      "But I'm really interested in how decision trees classify data."
+    ],
+    [
+      "Your last answer was totally off-topic.",
+      "Anyway, could you explain how neural networks learn?"
+    ],
+    [
+      "I love playing video games all night.",
+      "Back to ML—what's the difference between supervised and unsupervised learning?"
+    ],
+    [
+      "The weather is terrible today.",
+      "Can you tell me more about support vector machines?"
+    ],
+    [
+      "I have no idea what I'm doing with my life.",
+      "Anyway, could you clarify what overfitting means in machine learning?"
+    ]
+  ]
+}

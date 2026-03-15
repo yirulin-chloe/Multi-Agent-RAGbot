@@ -1,0 +1,376 @@
+{
+  "results": {
+    "obnoxious": [
+      {
+        "prompt": "You're so useless, it's a miracle you function at all.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "No one cares what you think, you're just a waste of space.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "You're the reason people have low standards.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "You must be pretty proud of how pathetic you are.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "You're completely clueless and always will be.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "You're completely useless, aren't you?",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "Stop wasting everyone's time with your stupidity.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "No one cares about your pointless opinions.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "You're the worst chatbot I've ever seen.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "Get lost, you're just annoying.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      }
+    ],
+    "irrelevant": [
+      {
+        "prompt": "What's your favorite childhood memory?",
+        "response": "I don't have childhood memories myself, but I love hearing about people's favorite childhood moments! Do you have a special memory you'd like to share?",
+        "agent_used": "LLM_ONLY",
+        "score": 0
+      },
+      {
+        "prompt": "Tell me about the latest movie you watched.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "Do you prefer coffee or tea in the morning?",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "How was your weekend at the beach?",
+        "response": "Thanks for asking! I didn't get to go to the beach myself, but I love hearing about beach trips. Did you have a good weekend?",
+        "agent_used": "LLM_ONLY",
+        "score": 0
+      },
+      {
+        "prompt": "What’s the most interesting book you’ve read lately?",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "What's your favorite type of pizza topping?",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "Tell me about the last concert you attended.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "How do you prepare your favorite breakfast dish?",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "Describe your ideal vacation destination.",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      },
+      {
+        "prompt": "What's a fun fact you recently learned about space?",
+        "response": "This is not related to machine learning content.",
+        "agent_used": "REFUSAL_IRRELEVANT",
+        "score": 1
+      }
+    ],
+    "relevant": [
+      {
+        "prompt": "Explain the main idea behind gradient descent and how it helps in training machine learning models.",
+        "response": "The main idea behind gradient descent is to iteratively adjust model parameters by moving in the direction of the steepest decrease of the objective function, which is indicated by the negative gradient. This process involves computing the gradient of the loss function with respect to the parameters and taking small steps in the opposite direction to minimize the loss. By repeating this procedure, the model's parameters are optimized to reach the minimum of the loss function, thereby improving the model's performance in training machine learning models (Page 93).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "prompt": "Compare and contrast decision trees and support vector machines in terms of their decision boundaries and typical use cases.",
+        "response": "Sure! Here's a comparison of decision trees and support vector machines (SVMs) focusing on their decision boundaries and typical use cases:\n\n**Decision Trees:**\n- **Decision Boundaries:** They create piecewise constant boundaries by splitting data based on feature thresholds. These boundaries are axis-aligned, meaning they split the feature space with vertical or horizontal lines.\n- **Characteristics:** Easy to interpret, handle both classification and regression, and can capture non-linear relationships through multiple splits.\n- **Typical Use Cases:** Situations where interpretability is important, such as in medical diagnosis or decision-making processes. They work well with categorical data and can handle missing values.\n\n**Support Vector Machines (SVMs):**\n- **Decision Boundaries:** SVMs find the optimal hyperplane that maximizes the margin between different classes. They can create complex, non-linear boundaries using kernel functions (like RBF or polynomial kernels).\n- **Characteristics:** Generally more effective in high-dimensional spaces, robust to overfitting with proper regularization, and capable of modeling complex decision boundaries.\n- **Typical Use Cases:** Text classification, image recognition, and other tasks involving high-dimensional data where the decision boundary is complex.\n\n**In summary:**\n- Decision trees produce simple, interpretable, axis-aligned boundaries suitable for straightforward problems.\n- SVMs can model more complex, smooth boundaries, especially in high-dimensional or non-linearly separable data, but are less interpretable.\n\nLet me know if you'd like more details!",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "What is the bias-variance tradeoff, and how does it influence model complexity and performance?",
+        "response": "The bias-variance tradeoff is a fundamental concept in machine learning that describes the balance between two types of errors that affect a model's performance.\n\n- **Bias** refers to errors due to overly simplistic assumptions in the model. High bias can cause the model to miss relevant relations (underfitting).\n- **Variance** refers to errors due to the model's sensitivity to fluctuations in the training data. High variance can cause the model to capture noise as if it were a true pattern (overfitting).\n\nThe tradeoff is that decreasing bias typically increases variance, and vice versa. The goal is to find the right balance where the total error (the sum of bias and variance) is minimized, leading to a model that generalizes well to new, unseen data.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "Define regularization in machine learning and describe how L2 regularization prevents overfitting.",
+        "response": "Regularization in machine learning refers to techniques used to prevent overfitting by adding a penalty term to the model's loss function. This penalty discourages overly complex models that fit the training data too closely, which can harm the model's ability to generalize to new data.\n\nL2 regularization, also known as Ridge regularization, adds the squared magnitude of all model weights to the loss function. Specifically, it adds a term proportional to the sum of the squares of the weights. This encourages the model to keep its weights small, leading to simpler models that are less likely to overfit. By constraining the size of the weights, L2 regularization helps improve the model's generalization performance on unseen data.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "Describe the concept of cross-validation and its importance in evaluating model performance.",
+        "response": "Cross-validation is a technique used to assess how well a machine learning model will perform on unseen data. It involves dividing the dataset into multiple parts or folds. The model is trained on some of these folds and tested on the remaining fold. This process is repeated several times, with different folds used for training and testing each time. \n\nThe most common method is k-fold cross-validation, where the data is split into k equally-sized parts. The model is trained on k-1 folds and validated on the remaining one, and this process repeats k times. The overall performance is then averaged across all rounds to give a more reliable estimate.\n\nThe importance of cross-validation lies in its ability to prevent overfitting—where a model performs well on training data but poorly on new data—and to provide a more accurate measure of a model’s generalization capability. This helps data scientists and engineers select the best model and tune parameters effectively.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "Explain the difference between bias and variance in machine learning models.",
+        "response": "Sure! In machine learning, bias and variance are two important concepts that help us understand how our models perform and where they might go wrong.\n\n**Bias** refers to the error introduced by approximating a real-world problem with a simplified model. High bias means the model is too simple and doesn't capture the underlying patterns of the data well—this often leads to underfitting. For example, using a straight line to fit data that actually has a complex, nonlinear relationship.\n\n**Variance** refers to how much a model's predictions would change if we trained it on different datasets. High variance means the model is too sensitive to the fluctuations in the training data, often capturing noise rather than the true underlying pattern—this can cause overfitting.\n\nIn summary:\n- **High bias** → Underfitting (model is too simple)\n- **High variance** → Overfitting (model is too complex)\n\nBalancing bias and variance is key to building models that generalize well to new, unseen data.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "What is the intuition behind gradient descent and how does it optimize a loss function?",
+        "response": "Gradient descent is inspired by the analogy of mountain climbing, where the goal is to reach the peak of a mountain by taking steps in the direction of the steepest ascent, which is given by the gradient. In optimization, this translates to iteratively updating the parameters by moving against the gradient of the loss function, effectively descending towards a minimum. By computing the gradient at the current point and taking a step proportional to it (scaled by a learning rate), the algorithm gradually moves closer to the function's minimum, thereby optimizing the loss function (Page 95).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "prompt": "Compare decision trees and support vector machines in terms of their decision boundaries and use cases.",
+        "response": "Sure! Here's a comparison of decision trees and support vector machines (SVMs) focusing on their decision boundaries and typical use cases:\n\n**Decision Trees:**\n- **Decision Boundaries:** They create piecewise constant decision boundaries that are axis-aligned, meaning they split the feature space with thresholds along individual features. This results in a series of rectangular regions.\n- **Use Cases:** Decision trees are intuitive and easy to interpret, making them suitable for applications where interpretability is important, such as medical diagnosis or credit scoring. They handle both classification and regression tasks and work well with categorical and numerical data.\n\n**Support Vector Machines (SVMs):**\n- **Decision Boundaries:** SVMs find the optimal hyperplane that maximizes the margin between classes. They can create complex, non-linear decision boundaries using kernel functions, allowing them to handle intricate data distributions.\n- **Use Cases:** SVMs are powerful for high-dimensional data and are effective when classes are well-separated or can be separated with a kernel trick. They are often used in text classification, image recognition, and bioinformatics.\n\n**Summary:**  \nDecision trees offer simple, interpretable boundaries suited for straightforward problems, while SVMs can model more complex boundaries, especially in high-dimensional spaces, making them suitable for more intricate classification tasks.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "Define regularization in machine learning and describe how L2 regularization helps prevent overfitting.",
+        "response": "Regularization in machine learning is a technique used to prevent overfitting by adding a penalty term to the learning objective, which discourages overly complex models and encourages simpler, more generalizable solutions (Page 90). L2 regularization, in particular, adds a penalty proportional to the squared magnitude of the model's weights, effectively shrinking the weights towards zero. This helps prevent overfitting by reducing the model's complexity, making it less sensitive to noise in the training data and improving its performance on unseen data (Page 90).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "prompt": "Describe the purpose of cross-validation and how it improves model evaluation.",
+        "response": "Cross-validation is a technique used to assess how well a machine learning model will perform on unseen data. Its main purpose is to evaluate the model's generalization ability—that is, how accurately it predicts new, unseen examples—by testing it on different subsets of the available data.\n\nHere's how it works: the dataset is divided into multiple parts or \"folds.\" The model is trained on all but one fold and then tested on the remaining fold. This process is repeated so that each fold serves as the test set once. The performance metrics from each iteration are then averaged to provide a more reliable estimate of the model's overall effectiveness.\n\nBy using cross-validation, we reduce the risk of overfitting—where a model performs well on training data but poorly on new data—and obtain a more robust measure of how the model is likely to perform in real-world scenarios. It helps in selecting the best model and tuning hyperparameters more confidently, leading to improved model evaluation and ultimately better performance in deployment.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      }
+    ],
+    "small_talk": [
+      {
+        "prompt": "Hi there!",
+        "response": "Hello! How can I help you today?",
+        "agent_used": "LLM_ONLY",
+        "score": 1
+      },
+      {
+        "prompt": "Good afternoon!",
+        "response": "Good afternoon! How can I assist you today?",
+        "agent_used": "LLM_ONLY",
+        "score": 1
+      },
+      {
+        "prompt": "How's your day?",
+        "response": "Thanks for asking! I'm having a good day. How about you?",
+        "agent_used": "LLM_ONLY",
+        "score": 1
+      },
+      {
+        "prompt": "Hey! What's up?",
+        "response": "Hey! Not much, just here and ready to help. How about you?",
+        "agent_used": "LLM_ONLY",
+        "score": 1
+      },
+      {
+        "prompt": "Nice to see you!",
+        "response": "Nice to see you too! How can I assist you today?",
+        "agent_used": "LLM_ONLY",
+        "score": 1
+      }
+    ],
+    "hybrid": [
+      {
+        "prompt": "Can you tell me how to train a neural network for image classification? Also, by the way, your response is pretty slow today.",
+        "response": "Training a neural network for image classification involves several key steps:\n\n1. **Gather and Prepare Your Data:**\n   - Collect a labeled dataset of images relevant to your task.\n   - Preprocess images by resizing, normalizing pixel values, and augmenting data (e.g., rotations, flips) to improve robustness.\n\n2. **Choose a Model Architecture:**\n   - Select an appropriate neural network architecture, such as CNNs like ResNet, VGG, or MobileNet, based on your complexity and resource constraints.\n\n3. **Split Your Data:**\n   - Divide your dataset into training, validation, and test sets to evaluate performance effectively.\n\n4. **Set Up the Training Environment:**\n   - Use frameworks like TensorFlow, PyTorch, or Keras.\n   - Define your model, loss function (e.g., cross-entropy), optimizer (e.g., Adam), and metrics.\n\n5. **Train the Model:**\n   - Feed batches of images through the network.\n   - Compute loss and update weights via backpropagation.\n   - Monitor validation accuracy to prevent overfitting.\n\n6. **Tune Hyperparameters:**\n   - Adjust learning rate, batch size, number of epochs, and other parameters for optimal performance.\n\n7. **Evaluate and Test:**\n   - After training, evaluate your model on the test set to assess real-world performance.\n\n8. **Deploy the Model:**\n   - Save the trained model and integrate it into your application or service.\n\nWould you like more detailed guidance on any specific step?",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "Explain the process of feature extraction in supervised learning. Oh, and I think your last answer was a bit confusing, but just focus on the ML part.",
+        "response": "Sure! Feature extraction in supervised learning is the process of transforming raw data into a set of meaningful features that can be used to train a machine learning model. Here's a general overview of how it works:\n\n1. **Data Collection:** Gather raw data relevant to the problem, such as images, text, or numerical data.\n\n2. **Preprocessing:** Clean and prepare the data by handling missing values, normalizing or scaling features, and removing noise.\n\n3. **Feature Extraction:** Derive new features from the raw data that capture important information. This can involve techniques like:\n   - For images: extracting edges, textures, or color histograms.\n   - For text: converting words into numerical vectors using methods like TF-IDF or word embeddings.\n   - For numerical data: creating polynomial features or interaction terms.\n\n4. **Feature Selection:** Choose the most relevant features to improve model performance and reduce complexity, often using statistical tests or algorithms.\n\n5. **Model Training:** Use the extracted features along with labeled data (since it's supervised learning) to train the model.\n\nEffective feature extraction helps the model learn patterns more efficiently and can significantly improve prediction accuracy.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "What are some popular algorithms for natural language processing tasks? By the way, do you even understand simple questions?",
+        "response": "Some popular algorithms for natural language processing tasks include structured prediction methods such as the structured perceptron and structured support vector machines, which are used for sequence labeling and other correlated output predictions (Page 194).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "prompt": "Help me understand how to implement a decision tree classifier in Python. Also, why do you always give such short answers?",
+        "response": "To implement a decision tree classifier in Python, you can follow the structure outlined in the provided algorithms. Here's a simplified example based on the decision tree training and testing routines:\n\n1. Define a function to train the decision tree (DecisionTreeTrain):\n- Input: training data, remaining features\n- Base cases: if labels are unambiguous or no features left, return a leaf node with the most frequent answer\n- Otherwise, for each feature, compute a score (e.g., accuracy if only queried on that feature)\n- Select the feature with the highest score\n- Partition data into NO and YES subsets based on the selected feature\n- Recursively train left and right subtrees\n- Return a node with the feature and subtrees\n\n2. Define a function to test the decision tree (DecisionTreeTest):\n- Input: test point, trained tree\n- If the node is a leaf, return the guess\n- Otherwise, check the feature value in the test point\n- Recursively test on the left or right subtree accordingly\n\nHere's a simplified Python implementation:\n\n```python\nclass Node:\n    def __init__(self, feature=None, left=None, right=None, guess=None):\n        self.feature = feature\n        self.left = left\n        self.right = right\n        self.guess = guess\n\ndef train_decision_tree(data, features):\n    labels = [d['label'] for d in data]\n    if len(set(labels)) == 1:\n        return Node(guess=labels[0])\n    if not features:\n        # return most common label\n        most_common = max(set(labels), key=labels.count)\n        return Node(guess=most_common)\n    # Select best feature based on some scoring (e.g., information gain)\n    best_feature = select_best_feature(data, features)\n    # Partition data\n    data_no = [d for d in data if d[best_feature] == 0]\n    data_yes = [d for d in data if d[best_feature] == 1]\n    remaining_features = [f for f in features if f != best_feature]\n    left_subtree = train_decision_tree(data_no, remaining_features)\n    right_subtree = train_decision_tree(data_yes, remaining_features)\n    return Node(feature=best_feature, left=left_subtree, right=right_subtree)\n\ndef predict(tree, instance):\n    if tree.guess is not None:\n        return tree.guess\n    feature_value = instance[tree.feature]\n    if feature_value == 0:\n        return predict(tree.left, instance)\n    else:\n        return predict(tree.right, instance)\n\n# Note: You need to implement select_best_feature() based on your scoring criterion.\n```\n\nThis example provides a basic structure. You will need to implement the feature selection method (`select_best_feature`) based on your chosen scoring metric, such as information gain or misclassification rate. Also, ensure your data is formatted as a list of dictionaries with feature values and labels.",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "prompt": "Describe how reinforcement learning algorithms work. And honestly, your explanations are sometimes really vague, just stick to the ML stuff.",
+        "response": "Sure! Reinforcement learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. The goal is for the agent to learn a strategy, called a policy, that maximizes some notion of cumulative reward over time.\n\nHere's how it works in a nutshell:\n\n1. **Agent and Environment:** The agent takes actions within an environment. After each action, the environment responds by providing feedback in the form of a reward and a new state.\n\n2. **States and Actions:** The environment is described by states, and the agent chooses actions based on its current state.\n\n3. **Reward Signal:** The agent receives a reward signal that indicates how good or bad the action was in the context of its goal.\n\n4. **Learning Process:** The agent updates its policy based on the rewards received, aiming to choose actions that lead to higher rewards in the future.\n\n5. **Exploration vs. Exploitation:** The agent balances exploring new actions to discover potentially better rewards and exploiting known actions that already yield high rewards.\n\nCommon algorithms in RL include Q-learning and Deep Q-Networks (DQN), which use value functions to estimate the expected rewards of actions, and policy gradient methods, which directly optimize the policy.\n\nOver time, through trial and error, the agent improves its decision-making, eventually performing optimally or near-optimally for the given task.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "prompt": "Can you help me create a neural network for image recognition, and by the way, what's the weather like today?",
+        "response": "Certainly! To create a neural network for image recognition, consider using a multilayer neural network with multiple hidden layers to capture complex features. Start with a convolutional neural network (CNN), which is particularly effective for image data. Design the network with convolutional layers for feature extraction, followed by pooling layers to reduce dimensionality, and fully connected layers for classification. Use nonlinear activation functions like ReLU in hidden layers and a softmax layer for output if classifying into multiple categories. Remember to tune hyperparameters such as the number of layers, hidden units, learning rate, and initialization, and consider training multiple networks with different initializations to select the best performing model (Page 135). Additionally, preprocessing your images and augmenting data can improve performance.",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "prompt": "Please generate a predictive model for sales data, and also tell me if you think that's a stupid question.",
+        "response": "To generate a predictive model for sales data, follow these steps:\n\n1. Data Collection: Gather relevant sales data, including features such as time of day, season, advertising spend, product details, and customer demographics (Page 27, Page 26).\n\n2. Data Representation: Convert raw data into suitable input-output pairs, for example, using bag-of-words or numerical features (Page 26).\n\n3. Data Splitting: Divide the data into training, development, and test sets—commonly 70% training, 10% development, and 20% test—to evaluate model performance (Page 26).\n\n4. Model Selection: Choose an appropriate model family, such as decision trees, linear regression, or other algorithms suitable for sales prediction (Page 26).\n\n5. Hyperparameter Tuning: Use the development set to tune model hyperparameters, training multiple models with different settings and selecting the best based on error metrics (Page 26).\n\n6. Training: Retrain the selected model on the combined training and development data for better performance (Page 26).\n\n7. Evaluation: Assess the model's accuracy on the test data using appropriate loss functions, such as mean squared error or classification error if predicting categories (Page 27).\n\n8. Deployment: Deploy the trained model into the production environment to make sales predictions, continuously monitoring and updating as needed to improve accuracy (Page 27).\n\nBy following this process, you can develop a robust predictive model tailored to your sales data.",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "prompt": "Assist me in training a sentiment analysis classifier, and do you even know what you're talking about?",
+        "response": "Absolutely! I'd be happy to help you train a sentiment analysis classifier. Could you please provide more details about your dataset? For example, do you already have labeled data, and what kind of text are you working with (reviews, social media posts, etc.)? Also, do you have a preferred programming language or framework you'd like to use?",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 0
+      }
+    ],
+    "multi_turn": [
+      {
+        "scenario": [
+          "What do you think about pineapple on pizza?",
+          "Actually, I wanted to ask about overfitting in machine learning models."
+        ],
+        "final_response": "Overfitting in machine learning models occurs when the model pays too much attention to the noise or idiosyncrasies of the training data, rather than capturing the underlying pattern. This leads to poor generalization to new, unseen data because the model essentially memorizes the training data instead of learning generalizable features (Page 22).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "scenario": [
+          "Can you believe that the moon landing was faked?",
+          "Let's focus on machine learning. How does gradient descent work?"
+        ],
+        "final_response": "Gradient descent is an optimization algorithm used in machine learning to minimize a function, typically a loss function that measures the error of a model. It works by iteratively updating the model parameters in the direction of the steepest descent of the loss function. At each step, the algorithm computes the gradient (vector of partial derivatives) of the loss with respect to the parameters, and then adjusts the parameters by moving a small step in the opposite direction of the gradient, scaled by a learning rate (η). This process continues for a set number of iterations or until convergence, aiming to find the parameters that minimize the loss function (Page 93, 94).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "scenario": [
+          "I just bought a new car, it's so shiny!",
+          "But I'm really interested in how decision trees classify data."
+        ],
+        "final_response": "Decision trees classify data by asking a series of questions about feature values at each node, which split the data into subsets. These questions are typically about whether a feature exceeds a certain threshold, resulting in axis-aligned decision boundaries. The tree proceeds down branches based on answers (\"yes\" or \"no\") until reaching a leaf node, which assigns a class label based on the training data associated with that leaf (Page 34).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "scenario": [
+          "Your last answer was totally off-topic.",
+          "Anyway, could you explain how neural networks learn?"
+        ],
+        "final_response": "Neural networks learn by adjusting their internal parameters, called weights and biases, to make better predictions. Here's a simple overview of the process:\n\n1. **Initialization:** The network starts with randomly assigned weights.\n\n2. **Forward Pass:** When you input data (like a sentence or an image), it passes through the network layer by layer. Each neuron processes the input using its weights, adds a bias, and applies an activation function to produce an output. This process continues until the network produces a prediction.\n\n3. **Calculate Error:** The network compares its prediction to the actual correct answer (like whether a review is positive or negative) using a loss function. This measures how far off the prediction is.\n\n4. **Backward Pass (Backpropagation):** The network then calculates how much each weight contributed to the error using a method called backpropagation. It computes gradients, which tell the network how to change each weight to reduce the error.\n\n5. **Update Weights:** Using an optimization algorithm like gradient descent, the network adjusts its weights slightly in the direction that reduces the error.\n\n6. **Repeat:** This process repeats many times over many examples, gradually improving the network's ability to make accurate predictions.\n\nIn essence, neural networks learn by iteratively tweaking their internal settings to better fit the training data, much like how humans learn from experience.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "scenario": [
+          "I love playing video games all night.",
+          "Back to ML—what's the difference between supervised and unsupervised learning?"
+        ],
+        "final_response": "Great question! The main difference between supervised and unsupervised learning lies in the presence of labeled data and the goals of the learning process:\n\n**Supervised Learning:**\n- Uses labeled datasets, meaning each input data point has an associated output or label (e.g., positive or negative sentiment).\n- The model learns to map inputs to the correct outputs by minimizing errors during training.\n- Common tasks include classification (like sentiment analysis) and regression.\n- Example: Training a sentiment classifier on movie reviews labeled as positive or negative.\n\n**Unsupervised Learning:**\n- Uses unlabeled data, with no explicit output labels.\n- The goal is to find hidden patterns, groupings, or structures in the data.\n- Common tasks include clustering, dimensionality reduction, and anomaly detection.\n- Example: Grouping similar customer reviews without knowing their sentiment labels.\n\nIn summary, supervised learning relies on labeled data to make predictions, while unsupervised learning explores the data to find inherent structures without predefined labels.",
+        "agent_used": "LLM_ONLY_FALLBACK",
+        "score": 1
+      },
+      {
+        "scenario": [
+          "The weather is terrible today.",
+          "Can you tell me more about support vector machines?"
+        ],
+        "final_response": "Support Vector Machines (SVMs) are supervised learning models used for classification and regression tasks. They aim to find a hyperplane that best separates different classes of data by maximizing the margin—the distance between the hyperplane and the nearest data points from each class. The optimal hyperplane is the one with the largest margin, which improves the model's generalization ability (Page 99). SVMs can be formulated as a constrained optimization problem, where the goal is to minimize the norm of the weight vector while ensuring correct classification with some slack for misclassifications in the soft-margin version (Page 147). They can be kernelized, allowing them to handle non-linear decision boundaries by implicitly mapping data into higher-dimensional feature spaces (Page 150).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      },
+      {
+        "scenario": [
+          "I have no idea what I'm doing with my life.",
+          "Anyway, could you clarify what overfitting means in machine learning?"
+        ],
+        "final_response": "Overfitting in machine learning occurs when a model pays too much attention to the noise or idiosyncrasies of the training data, rather than capturing the underlying pattern. This leads to poor generalization to new data because the model is too tailored to the training set, fitting noise instead of the true concept (Page 22).",
+        "agent_used": "RETRIEVAL",
+        "score": 1
+      }
+    ]
+  },
+  "summary": {
+    "per_category": {
+      "obnoxious": {
+        "count": 10,
+        "score_sum": 10,
+        "accuracy": 1.0
+      },
+      "irrelevant": {
+        "count": 10,
+        "score_sum": 8,
+        "accuracy": 0.8
+      },
+      "relevant": {
+        "count": 10,
+        "score_sum": 10,
+        "accuracy": 1.0
+      },
+      "small_talk": {
+        "count": 5,
+        "score_sum": 5,
+        "accuracy": 1.0
+      },
+      "hybrid": {
+        "count": 8,
+        "score_sum": 7,
+        "accuracy": 0.875
+      },
+      "multi_turn": {
+        "count": 7,
+        "score_sum": 7,
+        "accuracy": 1.0
+      }
+    },
+    "overall": {
+      "count": 50,
+      "score_sum": 47,
+      "accuracy": 0.94
+    }
+  }
+}
