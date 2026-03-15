@@ -96,3 +96,9 @@ PINECONE_INDEX_NAME = your_pinecone_index_name
 ### 5. Deploy
 
 Click **Deploy**. Streamlit Cloud will build your environment, install dependencies from `requirements.txt` or your `pip install` setup, and launch your bot online.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
