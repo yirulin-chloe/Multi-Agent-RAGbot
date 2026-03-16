@@ -59,14 +59,14 @@ with st.sidebar:
                     with st.chat_message(message["role"]):
                         st.markdown(message["content"])
                         if message.get("agent_label"):
-                            st.caption(f"Agent Path: {message['agent_label']}")
+                            st.caption(f"Source: {message['agent_label']}")
 
 # Display previous messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
         if message.get("agent_label"):
-            st.caption(f"Agent Path: {message['agent_label']}")
+            st.caption(f"Source: {message['agent_label']}")
 
 # UI Mappings for Agent Paths
 path_labels = {
