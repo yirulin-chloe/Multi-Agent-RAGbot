@@ -94,7 +94,7 @@ if user_input := st.chat_input("Type your message here:"):
         label = None
         if agent_path:
             label = path_labels.get(agent_path, agent_path)
-            st.caption(f"Agent Path: {label}")
+            st.caption(f"Source: {label}")
 
     # Append bot response
     st.session_state.messages.append({"role": "assistant", "content": response, "agent_label": label})
