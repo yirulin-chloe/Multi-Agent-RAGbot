@@ -96,12 +96,14 @@ class Context_Rewriter_Agent:
         self.client = openai_client
 
         self.sys_prompt = (
-            "You rewrite the user's latest message into a fully standalone query "
-            "using the conversation history.\n\n"
+            "You rewrite the user's latest message into a fully standalone query ONLY if it is a meaningful follow-up.\n\n"
 
-            "If the user uses pronouns like 'it', 'that', 'this', or vague phrases "
-            "like 'compare to', 'tell me more', 'explain further', you MUST resolve "
-            "what they refer to using the previous conversation.\n\n"
+            "If the user uses pronouns like 'it', 'that', 'this', or vague phrases like "
+            "'compare to', 'tell me more', or 'explain further', resolve them using conversation history.\n\n"
+
+            "IMPORTANT RULE:\n"
+            "If the latest message is NOT a meaningful follow-up (e.g., insults, abusive language, random words, or unrelated queries), "
+            "DO NOT use conversation history. Return the message as-is.\n\n"
 
             "Examples:\n"
             "Conversation:\n"
@@ -119,8 +121,13 @@ class Context_Rewriter_Agent:
             "User: Tell me more\n"
             "Rewrite: Explain SVM in more detail.\n\n"
 
+            "Conversation:\n"
+            "User: What is NVIDIA's P/E ratio?\n"
+            "User: idiot\n"
+            "Rewrite: idiot\n\n"
+
             "Return ONLY the rewritten query. Do NOT answer."
-            )
+        )
 
    def rephrase(self, user_history: List[Dict[str, str]], latest_query: str) -> str:
         if not user_history:
@@ -247,38 +254,25 @@ class Clean_Query_Agent:
     def __init__(self, openai_client):
         self.client = openai_client
 
-        self.sys_prompt = (
-            "You rewrite the user's latest message into a fully standalone query ONLY if it is a meaningful follow-up.\n\n"
-
-            "If the user uses pronouns like 'it', 'that', 'this', or vague phrases like "
-            "'compare to', 'tell me more', or 'explain further', resolve them using conversation history.\n\n"
-
-            "IMPORTANT RULE:\n"
-            "If the latest message is NOT a meaningful follow-up (e.g., insults, abusive language, random words, or unrelated queries), "
-            "DO NOT use conversation history. Return the message as-is.\n\n"
-
+        self.clean_prompt = (
+            "You are a strict filter for a machine learning question answering system.\n\n"
+            "The user query may contain multiple questions.\n"
+            "Extract ONLY the part related to machine learning.\n"
+            "Remove unrelated topics.\n"
+            "Remove insults or abusive language.\n\n"
+            "If multiple parts exist, keep ONLY the machine learning question.\n"
+            "If NO machine learning content exists, output exactly: NONE\n\n"
+            "Do NOT answer the question.\n"
+            "Return ONLY the cleaned machine learning query.\n\n"
             "Examples:\n"
-            "Conversation:\n"
-            "User: What is underfitting?\n"
-            "User: Compare to overfitting\n"
-            "Rewrite: Compare underfitting to overfitting.\n\n"
-
-            "Conversation:\n"
-            "User: Explain gradient descent\n"
-            "User: How does it work?\n"
-            "Rewrite: How does gradient descent work?\n\n"
-
-            "Conversation:\n"
-            "User: What is SVM?\n"
-            "User: Tell me more\n"
-            "Rewrite: Explain SVM in more detail.\n\n"
-
-            "Conversation:\n"
-            "User: What is NVIDIA's P/E ratio?\n"
-            "User: idiot\n"
-            "Rewrite: idiot\n\n"
-
-            "Return ONLY the rewritten query. Do NOT answer."
+            "Input: How to cook egg? and what is underfitting?\n"
+            "Output: What is underfitting?\n\n"
+            "Input: Explain SVM and who won the Super Bowl?\n"
+            "Output: Explain SVM.\n\n"
+            "Input: You are stupid.\n"
+            "Output: NONE\n"
+            "Return ONLY the cleaned machine learning query text.\n"
+            "Do NOT include the word 'Output'.\n"
         )
 
     def clean_query(self, query: str) -> str:
